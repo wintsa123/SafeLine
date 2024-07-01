@@ -48,7 +48,10 @@ bash -c "$(curl -fsSLk https://waf.chaitin.com/release/latest/setup.sh)"
 ```bash
 sudo bash -c "$(curl -fsSLk https://cdn.jsdelivr.net/gh/wintsa123/SafeLine/setup.sh)"
 ```
-
+群晖7.1以前版本安装输入命令
+```bash
+sudo bash -c "$(curl -fsSLk https://cdn.jsdelivr.net/gh/wintsa123/SafeLine/setup6.x.sh)"
+```
 
 ## 手动部署
 
