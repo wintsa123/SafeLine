@@ -1,7 +1,7 @@
 
 # SafeLine, the best free WAF for webmaster
 
-<img src="/documents/static/images/403.svg" align="right" width="200" />
+<img src="https://github.com/chaitin/SafeLine/documents/static/images/403.svg" align="right" width="200" />
 
 SafeLine is a web security gateway to protect your websites from attacks and exploits.
 
@@ -23,7 +23,7 @@ It defenses for all of web attacks, such as sql injection, code injection, os co
 
 # Screenshots
 
-<img src="./images/safeline_en.png" width=600 />
+<img src="https://github.com/chaitin/SafeLine/images/safeline_en.png" width=600 />
 
 # How It Works
 
@@ -40,105 +40,17 @@ SafeLine is developed based on nginx, it serves as a reverse proxy middleware to
 
 ## 自动部署
 
-> 👍Recommended
-
-Use the following command to start the automated installation of SafeLine. (This process requires root privileges)
+> 👍
 
 ```bash
 bash -c "$(curl -fsSLk https://waf.chaitin.com/release/latest/setup.sh)"
 ```
 群晖7.2安装输入命令
 ```bash
-
-sudo bash -c "$(curl -fsSLk https://waf-ce.chaitin.cn/release/latest/setup.sh)"
+sudo bash -c "$(curl -fsSLk https://cdn.jsdelivr.net/gh/wintsa123/SafeLine/setup.sh)"
 ```
-After the command is executed, it means the installation is successfully. Please go to "Use Web UI" directly.
 
 
-## Mannually Deploy
+## 手动部署
 
 to see [Documentation](https://docs.waf.chaitin.com/en/tutorials/install)
-
-# Usage
-
-## Login
-
-Open the web console page `https://<safeline-ip>:9443/` in the browser, then you will see below.
-
-<img width="400" src="/images/login.png">
-
-Execute the following command to get administrator account
-
-```bash
-docker exec safeline-mgt /app/mgt-cli reset-admin --once
-```
-
-After the command is successfully executed, you will see the following content
-
-> Please must remember this content
-
-```text
-[SafeLine] Initial username：admin
-[SafeLine] Initial password：**********
-[SafeLine] Done
-```
-
-Enter the password in the previous step and you will successfully logged into SafeLine.
-
-## Protecting a website
-
-Log into the SafeLine Web Admin Console, go to the "Site" -> "Website" page and click the "Add Site" button in the upper right corner.
-
-<img src="/images/add-site-1.png" width=800>
-
-In the next dialog box, enter the information to the original website.    
-
-- **Domain**: domain name of your original website, or hostname, or ip address, for example: `www.chaitin.com`
-- **Port**: port that SafeLine will listen, such as 80 or 443. (for `https` websites, please check the `SSL` option)
-- **Upstream**: real address of your original website, through which SafeLine will forward traffic to it
-
-After completing the above settings, please resolve the domain name you just entered to the IP address of the server where SafeLine is located.
-
-<img src="/images/add-site-2.png" width=400>
-
-Then you can access the website protected by the SafeLine through the domain name like this.
-
-<img src="/images/safeline-as-proxy-2.png" width=400>
-
-## Try to attack your website
-
-Now, your website is protected by SafeLine, let’s try tp attack it and see what happens.
-
-If https://chaitin.com is a website protected by SafeLine, here are some test cases for common attacks:
-
-- SQL Injection: `https://chaitin.com/?id=1+and+1=2+union+select+1`
-- XSS: `https://chaitin.com/?id=<img+src=x+onerror=alert()>`
-- Path Traversal: `https://chaitin.com/?id=../../../../etc/passwd`
-- Code Injection: `https://chaitin.com/?id=phpinfo();system('id')`
-- XXE: `https://chaitin.com/?id=<?xml+version="1.0"?><!DOCTYPE+foo+SYSTEM+"">`
-
-Replace `chaitin.com` in the above cases with your website domain name and try to access it.
-
-<img src="/images/blocked.png" width=400>
-
-Check the web console of SafeLine to see the attack list
-
-<img src="/images/log-list.png" width=800>
-
-To view the specific details of the attack, click "detail"
-
-<img src="/images/log-detail.png" width=600>
-
-## Star History
-
-<a href="https://github.com/chaitin/safeline/stargazers">
-    <img width="500" alt="Star History Chart" src="https://api.star-history.com/svg?repos=chaitin/safeline&type=Date">
-</a> 
-
-## Related Repo
-<p >
-  <a href="https://github.com/chaitin/yanshi">Automaton Generator</a> | 
-  <a href="https://github.com/chaitin/safeline-open-platform">Lua Plugin</a> | 
-  <a href="https://github.com/chaitin/lua-resty-t1k">T1K Protocol</a> |
-  <a href="https://github.com/chaitin/blazehttp">WAF Test Tool</a>
-</p>
