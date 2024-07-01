@@ -1,7 +1,6 @@
 
 # SafeLine, the best free WAF for webmaster
-
-<img src="https://github.com/chaitin/SafeLine/documents/static/images/403.svg" align="right" width="200" />
+<img src="https://raw.githubusercontent.com/chaitin/SafeLine/main/documents/static/images/403.svg" align="right" width="200" />
 
 SafeLine is a web security gateway to protect your websites from attacks and exploits.
 
@@ -23,7 +22,7 @@ It defenses for all of web attacks, such as sql injection, code injection, os co
 
 # Screenshots
 
-<img src="https://github.com/chaitin/SafeLine/images/safeline_en.png" width=600 />
+<img src="[https://github.com/chaitin/SafeLine/images/safeline_en.png](https://github.com/chaitin/SafeLine/blob/main/images/safeline_en.png)" width=600 />
 
 # How It Works
 
