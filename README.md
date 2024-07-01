@@ -20,13 +20,13 @@ It defenses for all of web attacks, such as sql injection, code injection, os co
   <a target="_blank" href="/documents/static/images/wechat-230825.png"><img src="https://img.shields.io/badge/WeChat-07C160?style=flat&logo=wechat&logoColor=white"></a>
 </p>
 
-# Screenshots
+# 截图
 
-<img src="https://github.com/chaitin/SafeLine/images/safeline_en.png" width=600 />
+<img src="https://raw.githubusercontent.com/chaitin/SafeLine/main/images/safeline_en.png" width=600 />
 
-# How It Works
+# 如何工作
 
-<img src="/images/safeline-as-proxy.png" align="right" width=400 />
+<img src="https://github.com/wintsa123/SafeLine/assets/47288630/a6f98cfc-3356-47fc-8a61-c868b847a582" align="right" width=400 />
 
 SafeLine is developed based on nginx, it serves as a reverse proxy middleware to detect and cleans web attacks, its core capabilities include:
 
