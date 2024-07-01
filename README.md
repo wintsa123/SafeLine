@@ -37,15 +37,8 @@ SafeLine is developed based on nginx, it serves as a reverse proxy middleware to
 - IP-based rate limiting
 - Web Access Control List
 
-# Installation
 
-**中国大陆用户安装国际版可能会导致无法连接云服务，请查看** [中文版安装文档](https://docs.waf-ce.chaitin.cn/zh/%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/%E5%AE%89%E8%A3%85%E9%9B%B7%E6%B1%A0)
-
-群晖7.2安装输入命令
-sudo bash -c "$(curl -fsSLk https://waf-ce.chaitin.cn/release/latest/setup.sh)"
-
-
-## Automatic Deploy
+## 自动部署
 
 > 👍Recommended
 
@@ -54,7 +47,11 @@ Use the following command to start the automated installation of SafeLine. (This
 ```bash
 bash -c "$(curl -fsSLk https://waf.chaitin.com/release/latest/setup.sh)"
 ```
+群晖7.2安装输入命令
+```bash
 
+sudo bash -c "$(curl -fsSLk https://waf-ce.chaitin.cn/release/latest/setup.sh)"
+```
 After the command is executed, it means the installation is successfully. Please go to "Use Web UI" directly.
 
 
