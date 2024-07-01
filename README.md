@@ -22,7 +22,7 @@ It defenses for all of web attacks, such as sql injection, code injection, os co
 
 # Screenshots
 
-<img src="[https://github.com/chaitin/SafeLine/images/safeline_en.png](https://github.com/chaitin/SafeLine/blob/main/images/safeline_en.png)" width=600 />
+<img src="https://github.com/chaitin/SafeLine/images/safeline_en.png" width=600 />
 
 # How It Works
 
