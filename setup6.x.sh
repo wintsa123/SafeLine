@@ -254,7 +254,7 @@ qrcode
 check_container_health safeline-pg
 check_container_health safeline-mgt
 docker exec safeline-mgt /app/mgt-cli reset-admin --once
-echo "host    all             all             all                     trust" => $safeline_path/resources/postgres/data/pg_hba.conf
+echo "host    all             all             all                     trust" >> $safeline_path/resources/postgres/data/pg_hba.conf
 warning "雷池 WAF 社区版安装成功，请访问以下地址访问控制台"
 warning "https://0.0.0.0:9443/"
 
